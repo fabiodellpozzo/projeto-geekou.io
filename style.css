@@ -1,0 +1,121 @@
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+      padding: 0;
+      margin: 0;
+    }
+
+.pn-ProductNav_Wrapper {
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  padding-top: 4.1em;
+}
+
+.pn-ProductNav {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  position: relative;
+  font-size: 0;
+  
+}
+
+.js .pn-ProductNav {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.js .pn-ProductNav::-webkit-scrollbar {
+  display: none;
+}
+
+.pn-ProductNav_Contents {
+  float: left;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.pn-ProductNav_Contents-no-transition {
+  transition: none;
+}
+
+.pn-ProductNav_Link {
+  text-decoration: none;
+  color: #888;
+  font-size: 0.9rem;
+  font-family: -apple-system, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  border: 1px solid transparent;
+  padding: 0 11px;
+}
+
+.pn-ProductNav_Link + .pn-ProductNav_Link {
+  border-left-color: #eee;
+}
+.pn-ProductNav_Link[aria-selected=true] {
+  color: #111;
+}
+
+.pn-Advancer {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.pn-Advancer:focus {
+  outline: 0;
+}
+.pn-Advancer:hover {
+  cursor: pointer;
+}
+
+.pn-Advancer_Left {
+  left: 0;
+  padding-top: 4em;
+}
+[data-overflowing=both] ~ .pn-Advancer_Left, [data-overflowing=left] ~ .pn-Advancer_Left {
+  opacity: 1;
+}
+
+.pn-Advancer_Right {
+  right: 0;
+  padding-top: 4em;
+}
+[data-overflowing=both] ~ .pn-Advancer_Right, [data-overflowing=right] ~ .pn-Advancer_Right {
+  opacity: 1;
+}
+
+.pn-Advancer_Icon {
+  width: 20px;
+  height: 44px;
+  fill: #bbb;
+ 
+  
+}
+
+.pn-ProductNav_Indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100px;
+  background-color: transparent;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}

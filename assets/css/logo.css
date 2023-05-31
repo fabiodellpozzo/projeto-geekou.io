@@ -1,0 +1,10 @@
+@font-face {
+    font-family: impact; 
+    src: url('./font/impact.ttf');
+  }
+
+  .logoGeekou {
+    font:impact, Arial, Tahoma, Sans-serif; 
+    font-size: 5rem; 
+    color: #3300cc; 
+    text-shadow: 2px 2px 2px  #9b9999;}

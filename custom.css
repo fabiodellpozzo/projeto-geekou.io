@@ -1,0 +1,64 @@
+:root {
+  --color:            crimson;   /* red   */
+  --background-color: white;     /* white */
+  --text-color:       black;     /* black */
+  --text-light-color: #444;      /* dark  */
+  --border-color:     silver;    /* grey  */
+  --link-color:         #2619AF; /* blau  */
+  --logo-color:         #3300cc; /* blau  */
+  --link-visited-color: #670199; /* lila  */
+  --url-color:          #078307; /* green */
+
+  --ad-color:           #58a33f; /* green */
+  --font-logo:           Impact, sans-serif;
+
+  --button-color: #696969;
+  --button-color-hover: #3300cc;
+}
+
+
+form {
+  background-color: var(--background-color);
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  display: flex;
+}
+
+.query {
+  background: transparent;
+  opacity: 1;
+  border: 0;
+  color: var(--text-color);
+  display: block;
+  font-size: 18px;
+  height: 38px;
+  line-height: 38px;
+  margin: 0;
+  outline: none;
+  padding: 5px 10px 5px 15px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+button {
+  background-color: transparent;
+  color: var(--button-color);
+  border: 0;
+  cursor: pointer;
+  flex: 0 0 40px;
+  font-weight: 500;
+  height: 38px;
+  line-height: 38px;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 16px;
+}
+
+button:hover{
+  color: var(--button-color-hover);
+
+}

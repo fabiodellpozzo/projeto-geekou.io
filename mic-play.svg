@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="25"
+   height="25"
+   fill="currentColor"
+   class="bi bi-mic-mute"
+   viewBox="0 0 25 25"
+   version="1.1"
+   id="svg23"
+   sodipodi:docname="mic-play.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs27" />
+  <sodipodi:namedview
+     id="namedview25"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="24.1875"
+     inkscape:cx="9.6744186"
+     inkscape:cy="13.912145"
+     inkscape:window-width="1618"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg23" />
+  <g
+     style="fill:#ff0000"
+     id="g857"
+     transform="matrix(1.4239146,0,0,1.3547322,0.8018649,1.3187437)">
+    <path
+       d="m 5,3 a 3,3 0 0 1 6,0 V 8 A 3,3 0 0 1 5,8 Z"
+       id="path845"
+       style="fill:#ff0000" />
+    <path
+       d="M 3.5,6.5 A 0.5,0.5 0 0 1 4,7 v 1 a 4,4 0 0 0 8,0 V 7 a 0.5,0.5 0 0 1 1,0 V 8 A 5,5 0 0 1 8.5,12.975 V 15 h 3 a 0.5,0.5 0 0 1 0,1 h -7 a 0.5,0.5 0 0 1 0,-1 h 3 V 12.975 A 5,5 0 0 1 3,8 V 7 A 0.5,0.5 0 0 1 3.5,6.5 Z"
+       id="path847"
+       style="fill:#ff0000" />
+  </g>
+</svg>
