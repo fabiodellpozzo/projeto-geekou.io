@@ -1,5 +1,5 @@
 const formPerguntaChat = document.getElementById('form-pergunta-chat');
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "key";
 if(OPENAI_API_KEY === ""){
     document.getElementById('pergunta').innerHTML = "<span style='color: #f00;'>Necessário colocar a chave na API no arquivo custom.js</span>";
 }
