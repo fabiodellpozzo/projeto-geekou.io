@@ -72,16 +72,7 @@
               <img src="graph-up-arrow.svg">
     </button>
 
-<!-- Button trigger modal 
-    <a type="button"
-    href="https://geekou.io/cx"
-            title="Creator Experience" 
-            alt="Creator Experience" 
-            class="navbar-brand btn btn btn-link">
-              <img src="edit-regular.svg">
-      </a>
 
--->
     
   </div>
 </nav>
