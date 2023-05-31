@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <title>Geekou</title>
-<html lang="pt_BR" class="h-100">
+<html lang="pt-BR" class="h-100">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
