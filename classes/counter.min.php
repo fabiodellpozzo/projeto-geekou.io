@@ -117,25 +117,14 @@ if ($counter_connected == true)
 
    }
 
-   
-
-      
-
-   // delete free ips
 
    if ($ignore == false)
 
    {
-
       $sql = "DELETE FROM counter_ips WHERE unix_timestamp(NOW())-unix_timestamp(visit) >= $counter_expire"; 
-
       mysqli_query($link, $sql);	  
-
    }
 
-      
-
-   // check for entry
 
    if ($ignore == false)
 
@@ -145,49 +134,28 @@ if ($counter_connected == true)
 
 	  mysqli_query($link, $sql);
 
-	  
-
 	  if (mysqli_affected_rows($link) > 0)
 
 	  {
-
 		 $ignore = true;						   		 
-
 	  }
 
 	  else
 
 	  {
-
-		 // insert ip
-
 	     $sql = "INSERT INTO counter_ips (ip, visit) VALUES ('$counter_ip', NOW())";
-
    	     mysqli_query($link, $sql); 
-
 	  }	  	  
 
    }
 
-   
-
-   // online?
-
    $sql = "SELECT * FROM counter_ips";
-
    $res = mysqli_query($link, $sql);
-
    $online = mysqli_num_rows($res);
-
-      
-
-   // add counter
 
    if ($ignore == false)
 
    {     	  
-
-      // yesterday
 
 	  if ($day_id == (date("z")-1)) 
 
@@ -213,10 +181,6 @@ if ($counter_connected == true)
 
 	  $yesterday_id = (date("z")-1);
 
-	  
-
-	  // day
-
 	  if ($day_id == date("z")) 
 
 	  {
@@ -235,9 +199,6 @@ if ($counter_connected == true)
 
 	  }
 
-	  
-
-	  // week
 
 	  if ($week_id == date("W")) 
 
@@ -257,9 +218,6 @@ if ($counter_connected == true)
 
       }
 
-	  
-
-      // month
 
 	  if ($month_id == date("n")) 
 
@@ -337,13 +295,9 @@ if ($counter_connected == true)
 
 
 
-
-
       <!-- Visitas --><?php echo $all_value; ?>  <!--Visitas-->
 
 
-
- 
 
 <?php
 
