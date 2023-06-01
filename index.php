@@ -56,7 +56,7 @@
 
 
 
-    <img src="geekou.png" class="img-fluid" alt="...">
+    <img src="src/images/geekou.png" class="img-fluid" alt="...">
 
     
 
