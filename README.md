@@ -1,2 +1,2 @@
 # projeto-geekou.io
-Projeto de inicialização do desenvolvimento do buscador open source com apoio da comunidade GitHub.
+Projeto de desenvolvimento dbuscador opensource brasileiro com apoio da comunidade GitHub.
