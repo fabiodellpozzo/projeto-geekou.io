@@ -1,31 +1,9 @@
 <?php
 include("config.php");
 include("classes/AllResultsProvider.php");
-include("classes/AnimeResultsProvider.php");
-include("classes/AplicativosResultsProvider.php");
-include("classes/ArtesResultsProvider.php");
-include("classes/BibliaResultsProvider.php");
-include("classes/CepsResultsProvider.php");
-include("classes/CursosResultsProvider.php");
+
 include("classes/DicionarioResultsProvider.php");
-include("classes/EmpregosResultsProvider.php");
-include("classes/EntretenimentoResultsProvider.php");
-include("classes/FilmesResultsProvider.php");
-include("classes/FinancasResultsProvider.php");
-include("classes/GamesResultsProvider.php");
-include("classes/LivrosResultsProvider.php");
-include("classes/MusicasResultsProvider.php");
-include("classes/NegociosResultsProvider.php");
-include("classes/NoticiasResultsProvider.php");
-include("classes/PodcastsResultsProvider.php");
-include("classes/ProfissionaisResultsProvider.php");
-include("classes/ReceitasResultsProvider.php");
-include("classes/ShoppingResultsProvider.php");
-include("classes/SocialResultsProvider.php");
-include("classes/TecnologiaResultsProvider.php");
-include("classes/TutoriaisResultsProvider.php");
-include("classes/VideosResultsProvider.php");
-include("classes/ImageResultsProvider.php");
+
 if(isset($_GET["term"])) {$term = $_GET["term"];}
 else {exit("Você deve inserir um termo de pesquisa.");}
 $type = isset($_GET["type"]) ? $_GET["type"] : "links";
