@@ -13,9 +13,139 @@
   <link rel="stylesheet" href="src/css/jquery-ui.css">
   <link rel="stylesheet" href="src/css/bootstrap.css">
 
+<<<<<<< HEAD
   <style>
     body {
       box-shadow: inset 0 0 1.7rem rgba(136, 134, 134, 0.5);
+=======
+      .magnifying-glass-solid {
+          height: 50px;
+          width: 55px;
+        }
+
+
+    
+    </style>
+
+  </head>
+  <body class="d-flex h-100 text-center text-bg-white">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+
+
+<main class="px-3">
+
+<nav class="navbar fixed-top">
+  <div class="container-fluid">
+   
+    <!-- Button trigger modal -->
+    <button type="button" 
+            title="Estatísticas" 
+            alt="Estatísticas" 
+            class="navbar-brand btn btn btn-link graph-up-arrow.svg" 
+            data-bs-toggle="modal" 
+            data-bs-target="#exampleModal">
+              <img src="graph-up-arrow.svg">
+    </button>
+
+
+    
+  </div>
+</nav>
+
+
+
+    <img src="geekou.png" class="img-fluid" alt="...">
+
+    
+
+    <form action="https://geekou.io/search.php" method="get">
+
+      <div class="input-group mb-3 rounded-pill shadow-sm">
+
+        <button class="btn btn btn btn-outline-primary rounded-pill rounded-end border border-end-0" type="button" onclick="reco.toggleStartStop()">
+          <img id="status_img" src="mic-mute.svg" alt="Start">
+        </button>
+
+        <!-- <input type="text" class="form-control border border-end-0 border-start-0" placeholder="Geek + Sextou = ?" 
+        action="search.php" method="GET" name="term" id="input_field" size="100" autocomplete="off"> -->
+        <input type="text" class="form-control border border-end-0 border-start-0" placeholder="Pesquise.." action="search.php" method="GET" name="term" id="input_field" size="100" autocomplete="off">
+
+
+        
+        <button class="btn btn btn-outline-primary rounded-pill rounded-start border border-start-0" type="submit" value="Search" id="button-addon2">
+          <img src="magnifying-glass-solid.svg" class="magnifying-glass-solid" alt="Pesquisar" title="Pesquisar">
+        </button>
+
+      </div>
+
+    </form>
+
+    <div id="status" class="fs-6 fw-light"></div>
+
+
+    <!-- Button trigger modal -->
+    <a class="link" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">ou pergunte ao ChatGPT</a>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ChatGPT</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="form-pergunta-chat">
+          <div class="input-group mb-3">
+            <textarea class="form-control" id="campo-pergunta" rows="1" cols="100" placeholder="Digite a pergunta"></textarea>
+            <input type="submit" class="btn btn-primary btn-sm" id="btn-pergunta-chat" value="Enviar">
+          </div>
+        </form>
+        <p id="pergunta"></p>
+        <p id="resposta"></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+      <footer class="mt-auto">
+        <p class="text-center">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacidadeModal" class="text-footer">Privacidade</a>
+          -  
+          <a href="#" class="text-footer">Termos e Condições</a>
+        </p>
+      </footer>
+
+
+
+    
+
+
+  </div>
+
+
+<script src="chatgpt.js"></script>
+<script src="webspeech.js"></script>
+
+<script>
+  var reco = new WebSpeechRecognition();
+  reco.lang = "pt-BR";
+  reco.statusText('status');
+  reco.statusImage('status_img');
+  reco.finalResults('input_field');
+
+  reco.onEnd = function() {
+    if (reco.final_transcript != ' ') {
+      input_field.form.submit();
+>>>>>>> e38f62ccc810668789692c3a80a8f76752781762
     }
 
     .cover-container {
@@ -419,4 +549,12 @@
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+
+
+
+  </body>
+</html>
+>>>>>>> e38f62ccc810668789692c3a80a8f76752781762
