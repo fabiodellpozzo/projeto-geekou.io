@@ -1,46 +1,25 @@
 <?php
 
-
-
 $counter_expire = 001;
-
 $counter_ignore_agents = array('bot', 'bot1', 'bot3');
-
 $counter_ignore_ips = array('127.0.0.2', '127.0.0.3');
-
-
 $counter_host = "localhost";
-
 $counter_user = "root";
-
 $counter_password = "";
-
 $counter_database = "geekou-github";
-
-
-
 $counter_agent = $_SERVER['HTTP_USER_AGENT'];
-
 $counter_ip = $_SERVER['REMOTE_ADDR']; 
-
 $counter_time = time();
-
-
 
 $counter_connected = true;
 
 $link = mysqli_connect($counter_host, $counter_user, $counter_password, $counter_database);
-
 if (!$link) 
 
 {
-
 	$counter_connected = false;
-
 	die('Connect Error (' . mysqli_connect_errno() . ') ' . mysqli_connect_error());
-
 	exit;
-
 }
 
 
@@ -48,23 +27,13 @@ if (!$link)
 if ($counter_connected == true) 
 
 {
-
    $ignore = false; 
-
-   
-
    $sql = "SELECT * FROM counter_values LIMIT 1";
-
    $res = mysqli_query($link, $sql);
-
-   
-
    if (mysqli_num_rows($res) == 0)
 
    {	  
-
 	  $sql = "INSERT INTO `counter_values` (`id`, `day_id`, `day_value`, `yesterday_id`, `yesterday_value`, `week_id`, `week_value`, `month_id`, `month_value`, `year_id`, `year_value`, `all_value`, `record_date`, `record_value`) VALUES ('1', '" . date("z") . "',  '1', '" . (date("z")-1) . "',  '0', '" . date("W") . "', '1', '" . date("n") . "', '1', '" . date("Y") . "',  '1',  '1',  NOW(),  '1')";
-
 	  mysqli_query($link, $sql);
 
 
@@ -80,8 +49,6 @@ if ($counter_connected == true)
    }   
 
    $row = mysqli_fetch_assoc($res);
-
-   
 
    $day_id = $row['day_id'];
 
@@ -110,9 +77,6 @@ if ($counter_connected == true)
    $record_value = $row['record_value'];
 
    
-
-   
-
    // check ignore lists
 
    $length = sizeof($counter_ignore_agents);
