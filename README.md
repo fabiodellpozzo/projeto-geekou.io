@@ -1,6 +1,5 @@
 # projeto-geekou.io
-Projeto de desenvolvimento do 1º Buscador Open Source brasileiro.
-
+Projeto de desenvolvimento do 1º Search Engine Open Source brasileiro.
 
 Welcome to the projeto-geekou.io v0
 
