@@ -2,7 +2,7 @@
 Projeto de desenvolvimento buscador opensource brasileiro.
 
 
-Welcome to the projeto-geekou.io wiki!* 1.
+Welcome to the projeto-geekou.io v0
 
 Inicialmente quero agradecer ao professor https://www.udemy.com/user/reecekenney/, por compartilhar seus conhecimentos a base deste projeto.
 
