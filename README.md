@@ -8,3 +8,5 @@ Inicialmente quero agradecer ao instrutor Reece Kenney - Software Engineer at Mi
 Agradeço ao canal do Youtube @CelkeBr https://www.youtube.com/@CelkeBr por compartilhar seus conhecimentos através do seu canal e por doar o curso que é a base do back-end do projeto.
 
 E agradecer ao canal do Youtube @FabricandoSuaIdeia https://www.youtube.com/@FabricandoSuaIdeia por compartilhar seu conhecimento e deixar meu VPS turbinado.
+
+E ao GitHub por disponibilizar esta incrível plataforma de versionamento de código no qual ainda estou estudando.
