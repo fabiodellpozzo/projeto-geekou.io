@@ -9,4 +9,4 @@ Agradeço ao canal do Youtube @CelkeBr https://www.youtube.com/@CelkeBr por comp
 
 E agradecer ao canal do Youtube @FabricandoSuaIdeia https://www.youtube.com/@FabricandoSuaIdeia por compartilhar seu conhecimento e deixar meu VPS turbinado.
 
-E ao GitHub por disponibilizar esta incrível plataforma de versionamento de código no qual ainda estou estudando.
+E ao GitHub por disponibilizar esta incrível plataforma de versionamento e compartilhamento de código no qual ainda estou estudando.
